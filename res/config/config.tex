@@ -1,0 +1,53 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[pages=some]{background}
+
+\usepackage[top=1.125in, bottom=1.125in, left=0.75in, right=0.75in]{geometry}
+
+\backgroundsetup{
+	firstpage = {true},
+	placement = {center},
+	position = current page.center,
+	contents = {\includegraphics[scale=0.07]{./imgs/unipd}},
+	angle = {0},
+	opacity = {0.05}
+}
+
+\usepackage[english,italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} 
+\usepackage{xcolor} 
+\usepackage{enumitem} 
+\usepackage[perpage]{footmisc} 
+\usepackage{mathtools,stmaryrd} 
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{appendix}
+\usepackage{clrscode3e} 
+\RequirePackage{graphics} 
+
+\newcommand{\authorName}{Alberto Crivellari, Federico Brian}
+
+\newenvironment{preventpagebreak}
+{\par\nobreak\vfil\penalty0\vfilneg
+	\vtop\bgroup}
+{\par\xdef\tpd{\the\prevdepth}\egroup
+	\prevdepth=\tpd}
+
+\author{di \authorName}
+\date{}
+\title{\Huge Progetto di Basi di Dati\\*
+				A.A. 2018/2019\\*
+				"UsMoto"}
+
+
+\usepackage{fancyhdr} 
+
+\fancyhf{}
+\fancyhead[R]{\small\scshape\nouppercase{\leftmark}}
+\fancyhead[L]{\small\scshape\nouppercase{\rightmark}}
+
+\lhead{\nouppercase{\rightmark}}
+\rhead{\nouppercase{\leftmark}}
+\cfoot{\thepage}
+
+\pagestyle{fancy}
