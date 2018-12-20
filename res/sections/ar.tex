@@ -1,14 +1,28 @@
 \section{Analisi dei Requisiti}
-	Si vuole realizzare una base di dati che organizzi le inserzioni di vendita in un sito web. \`{E} quindi necessario definire, prima di tutto, l'oggetto protagonista di questo DB: l'entit\`{a} \textbf{moto}. 		\subsection{Moto}	
-		La raccolta dei requisiti per definire l'entit\`{a} \textbf{moto} ci ha permesso di individuare le seguenti caratteristiche:
-	\openup 0em
+	Si vuole realizzare una base di dati che organizzi le inserzioni di vendita in un sito web. \`{E} quindi necessario identificare, prima di tutto, le entit\`{a} protagoniste di questo DB.
+	
+	\subsection{Moto}	
+		Una moto \`{e} l'oggetto principale di ogni \textbf{inserzione}, la quale \`{e} creata da un \textbf{utente}. La raccolta dei requisiti per definire l'entit\`{a} \textbf{moto} ci ha permesso di individuare le seguenti caratteristiche:
 	\begin{itemize}
-	\setlength\itemsep{0em}
+	\openup -0.5em
 		\item il nome della marca e del modello;
 		\item l'anno di produzione e la data d'immatricolazione;
  		\item il colore e la categoria a cui appartiene la moto (enduro, cross, da corsa, custom, ...);
   		\item la classe di emissioni, la cilindrata e la potenza erogata dal motore (in cavalli);
   		\item il kilometraggio ed il numero totale di proprietari;
-  		\item la data dell'ultimo tagliando e della prossima revisione da effettuare.;
+  		\item la data dell'ultimo tagliando e della prossima revisione da effettuare.
 	\end{itemize}
+	
+  	\subsection{Utente}
+  	Un utente \`{e} colui che inserisce l'annuncio della moto che vuole vendere nel sito web (un utente deve poter inserire pi\`{u} annunci, inerenti per\`{o} a moto diverse. Sono stati, quindi, individuate le seguenti propriet\`{a}:
+  	\begin{itemize}
+  	\openup -0.5em
+  		\item le sue generalit\`{a}, come il nome ed il cognome; 
+  		\item un recapito telefonico, mail, regione e provincia di residenza;
+  		\item il fatto che sia admin del sito oppure no.
+  	\end{itemize}
+  	
+  	\subsection{Regione}
+  	
+  	
   		
